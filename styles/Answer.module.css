@@ -1,0 +1,82 @@
+.answer {
+    display: flex;
+    margin: 10px;
+    height: 100px;
+    min-width: 500px;
+    width: 80%;
+    perspective: 1000px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    position: relative;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+
+.content.answerRevealed {
+    transform: rotateY(180deg);
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #fff;
+    text-shadow: 0px 2px #383838;
+}
+
+.value {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.frontCardContent, .backCardContent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.frontCardContent {
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px;
+    color: #383838;
+    background-color: #fff
+}
+
+.backCardContent {
+    transform: rotateY(180deg);
+}
+
+.backCardContent > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 12px;
+    border: 2px solid #fff
+}
+
+.correct .value, .wrong .value {
+    font-size: 1.5rem;
+}
+
+.correct {
+    background-color: #2BAA6D;
+}
+
+.wrong {
+    background-color: #E44A4C;
+}
