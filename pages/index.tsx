@@ -1,26 +1,18 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import AnswerModel from "../model/answer";
 import QuestionModel from "../model/question";
 import Quiz from '../components/Quiz';
 
 import styles from '../styles/Index.module.css'
 
-const questionTest  = new QuestionModel(1, 'Qual é a melhor cor?', [
-  AnswerModel.wrongQuestion('Verde'),
-  AnswerModel.wrongQuestion('Vermelho'),
-  AnswerModel.wrongQuestion('Azul'),
-  AnswerModel.correctQuestion('Preto'),
-]);
-
-const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'https://quiz-virid-kappa.vercel.app/api';
 
 export default function Home() {
   const router = useRouter();
 
   const [questionsIds, setQuestionsIds] = useState<number[]>([])
-  const [question, setQuestion] = useState(questionTest);
+  const [question, setQuestion] = useState(null);
   const [correctQuestions, setCorrectQuestions] = useState(0);
 
   async function loadIdsQuestions() {
