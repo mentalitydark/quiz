@@ -1,4 +1,4 @@
-import styles from '../styles/Statistic.module.css';
+import styles from './../styles/Statistic.module.css';
 
 interface StatisticProps {
     value: any;

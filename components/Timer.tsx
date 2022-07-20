@@ -1,4 +1,4 @@
-import styles from '../styles/Timer.module.css';
+import styles from './../styles/Timer.module.css';
 
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 

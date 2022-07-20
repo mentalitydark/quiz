@@ -1,5 +1,5 @@
-import styles from '../styles/Answer.module.css';
-import AnswerModel from "../model/answer";
+import styles from './../styles/Answer.module.css';
+import AnswerModel from "./../model/answer";
 
 interface AnswerProps {
     value: AnswerModel;

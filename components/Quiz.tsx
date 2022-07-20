@@ -1,6 +1,6 @@
-import styles from '../styles/Quiz.module.css';
+import styles from './../styles/Quiz.module.css';
 
-import QuestionModel from '../model/question';
+import QuestionModel from './../model/question';
 import Question from './Question';
 import Button from './Button';
 

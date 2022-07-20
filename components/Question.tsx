@@ -1,5 +1,5 @@
-import styles from '../styles/Question.module.css'; 
-import QuestionModel from '../model/question'
+import styles from './../styles/Question.module.css'; 
+import QuestionModel from './../model/question'
 import Description from './Description';
 import Answer from './Answer';
 import Timer from './Timer';

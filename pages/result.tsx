@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
-import Button from '../components/Button';
-import Statistic from '../components/Statistic';
+import Button from './../components/Button';
+import Statistic from './../components/Statistic';
 
-import styles from '../styles/Result.module.css';
+import styles from './../styles/Result.module.css';
 
 export default function Result() {
     const router = useRouter();
