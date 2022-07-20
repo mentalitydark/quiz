@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-import QuestionModel from "../model/question";
-import Quiz from '../components/Quiz';
+import QuestionModel from "./../model/question";
+import Quiz from './../components/Quiz';
 
-import styles from '../styles/Index.module.css'
+import styles from './../styles/Index.module.css'
 
 const BASE_URL = 'https://quiz-virid-kappa.vercel.app/api';
 
